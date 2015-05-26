@@ -1,4 +1,3 @@
-Listing 11.67: The final Gemfile for the sample application.
 source 'https://rubygems.org'
 
 gem 'rails',                   '4.2.0'
