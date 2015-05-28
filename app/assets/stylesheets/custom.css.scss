@@ -3,6 +3,8 @@
 
 /* universal */
 
+$light-gray: #777;
+
 body {
     padding-top: 60px;
 }
@@ -17,12 +19,12 @@ textarea {
 
 
 .center {
-    text-align: center;
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
 }
 
-.center h1 {
-    margin-bottom: 10px;
-}
 
 /* typography */
 
@@ -47,11 +49,10 @@ h1 {
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
-}
-
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 h2 {
@@ -60,10 +61,36 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: $gray-light;
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $gray-light;
+  color: $gray-light;
+  a {
+    color: $gray;
+    &:hover {
+      color: $gray-darker;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
 }
